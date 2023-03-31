@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --font-pricipal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: var(--font-pricipal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--cor-botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-principal);
+    display: block;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.botao_secundario  {
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__conteudo {
+    margin: 0 6em;
+}
+
+.imagem__secundaria {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    color: var(--cor-principal);
+}
+
+.descricao__texto {
+    color: var(--cor-secundaria);
+}
+
+.secundario__botao {
+    display: inline-block;
+}
+
+.container__descricao {
+    padding: 3em;
+}
+
+.container__descricao_terceira {
+    padding-right: 9em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--cor-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--cor-principal);
+}
+
+.rodape {
+    text-align: center;
+}
+
+.lista__rodape {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    margin: 1em;
+}
+
+.rodape__texto {
+    margin: 2em 0;
+}
+
+.lista__link a:active {
+    color: #FFFFFF;
+}
+
+.container__botao:hover {
+    background-color: #70affc;
+    color: #000000;
+}
